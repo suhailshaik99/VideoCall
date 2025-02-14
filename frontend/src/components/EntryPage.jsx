@@ -7,13 +7,13 @@ const EntryPage = () => {
 
   const handleJoin = () => {
     if (!name.trim()) return alert("Please enter your name");
-    
+
     const roomId = "12345"; // Static room for now (later can be dynamic)
     navigate(`/room/${roomId}?name=${encodeURIComponent(name)}`);
   };
 
   return (
-    <div className="entry-container">
+    <div className="entry-container input-container">
       <h1>Video Call App</h1>
       <input
         type="text"
