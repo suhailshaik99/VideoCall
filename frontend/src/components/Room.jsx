@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useParams, useLocation, useNavigate } from "react-router-dom";
 import io from "socket.io-client";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://videocall-1b04.onrender.com");
 
 const Room = () => {
   const { roomId } = useParams();
